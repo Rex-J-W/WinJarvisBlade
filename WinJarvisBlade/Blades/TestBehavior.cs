@@ -1,16 +1,18 @@
-﻿using Jarvis.API.Behaviors;
+﻿using Jarvis.API;
+using Jarvis.API.Behaviors;
+using System.Diagnostics;
 
 namespace WinJarvisBlade.Blades
 {
     public class TestBehavior : IStart
     {
-        public bool Enabled { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool Enabled { get; set; } = true;
 
-        public int Priority => throw new NotImplementedException();
+        public int Priority => 100;
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Debug.WriteLine("test");
         }
     }
 }
