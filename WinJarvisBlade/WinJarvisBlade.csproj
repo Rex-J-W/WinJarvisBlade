@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>WinJarvisBlade.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="JarvisAPIWinBlade">
+      <HintPath>..\..\JarvisAPIWinBlade\JarvisAPIWinBlade\bin\Release\net6.0\JarvisAPIWinBlade.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
